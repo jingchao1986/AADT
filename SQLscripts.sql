@@ -31,8 +31,14 @@ CREATE TABLE edge_values (
 CREATE TABLE edge_values_cal(
     evc_id serial not null primary key,
     evc_edg_id_target INT,
-    evc_aadt INT,
+    evc_target_start INT,
+    evc_target_end INT,
+    evc_target_aadt INT,
     evc_edg_id_source INT,
+    evc_edg_id_source_start INT,
+    evc_edg_id_source_end INT,
+    evc_source_aadt INT,
+    evc_flag BOOLEAN,
     FOREIGN KEY (evc_edg_id_target) REFERENCES edges (edg_id),
     FOREIGN KEY (evc_edg_id_source) REFERENCES edges (edg_id)
 );
@@ -326,38 +332,3 @@ VALUES (1, 2, 35000),
     (2, 6, 42000),
     (3, 18, 32000),
     (4, 21, 28000);
-WITH two_ends AS --find the two ends of the known(red) edges
-(
-    SELECT edg_id,
-        edg_nod_id_start,
-        edg_nod_id_end
-    FROM edges
-        JOIN edge_values ON edges.edg_id = edge_values.egv_edg_id
-),
-red_nodes_start AS --find start node of the red known edge.
-(
-    SELECT edg_nod_id_start as red_nod_start_id,
-        edg_id as red_nod_start_edg_id
-    FROM two_ends
-),
---find all edges that connect to the red known edges' start node.
-target_start AS(
-    SELECT edg_id AS edg_id_target,
-        edg_egt_weight,
-        edg_nod_id_start,
-        edg_nod_id_end,
-        red_nodes_start.red_nod_start_edg_id AS edg_id_source
-    FROM edges
-        JOIN red_nodes_start ON edg_id != red_nodes_start.red_nod_start_edg_id
-        AND edges.edg_nod_id_start = red_nodes_start.red_nod_start_id
-        OR edges.edg_nod_id_end = red_nodes_start.red_nod_start_id
-    ORDER BY edg_id_source
-)
-INSERT INTO edge_values_cal (evc_edg_id_target, evc_aadt, evc_edg_id_source)
-SELECT edg_id_target,
-    edge_values.egv_aadt * edg_egt_weight /(
-        sum(edg_egt_weight) over (partition by edg_id_source)
-    ) AS target_aadt,
-    edg_id_source
-FROM target_start
-    JOIN edge_values ON target_start.edg_id_source = edge_values.egv_edg_id
