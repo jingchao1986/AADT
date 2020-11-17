@@ -34,6 +34,7 @@ CREATE TABLE aadt.edge_values_cal(
     evc_edg_id_target INT,
     evc_target_start INT,
     evc_target_end INT,
+    evc_target_weight INT,
     evc_target_aadt INT,
     evc_edg_id_source INT,
     evc_edg_id_source_start INT,

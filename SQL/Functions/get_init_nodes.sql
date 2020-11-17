@@ -5,8 +5,8 @@ BEGIN WITH two_ends AS --find the two ends of the known(red) edges
     SELECT edg_id,
         edg_nod_id_start,
         edg_nod_id_end
-    FROM edges
-        JOIN edge_values ON edges.edg_id = edge_values.egv_edg_id
+    FROM aadt.edges
+        JOIN aadt.edge_values ON edges.edg_id = edge_values.egv_edg_id
 ),
 red_nodes_start AS --find start node of the red known edge.
 (
@@ -22,16 +22,16 @@ target_start AS(
         edg_nod_id_end,
         red_nodes_start.red_nod_start_edg_id AS edg_id_source,
         red_nodes_start.red_nod_start_id AS source_start_id
-    FROM edges
+    FROM aadt.edges
         JOIN red_nodes_start ON edg_id != red_nodes_start.red_nod_start_edg_id
-        AND edges.edg_nod_id_start = red_nodes_start.red_nod_start_id
-        OR edges.edg_nod_id_end = red_nodes_start.red_nod_start_id
+        AND aadt.edges.edg_nod_id_start = red_nodes_start.red_nod_start_id
+        OR aadt.edges.edg_nod_id_end = red_nodes_start.red_nod_start_id
     ORDER BY edg_id_source
 ),
 init_target AS(
     SELECT edg_id_target,
         edges.edg_length AS target_length,
-        target_start.edg_egt_weight,
+        target_start.edg_egt_weight AS target_weight,
         edg_id_source,
         edge_values.egv_aadt AS source_aadt,
         edge_values.egv_aadt * target_start.edg_egt_weight /(
@@ -45,13 +45,14 @@ init_target AS(
             when target_start.edg_nod_id_end = target_start.source_start_id then target_start.edg_nod_id_start
         end AS next_node
     FROM target_start
-        JOIN edge_values ON target_start.edg_id_source = edge_values.egv_edg_id
-        JOIN edges on edg_id_target = edg_id
+        JOIN aadt.edge_values ON target_start.edg_id_source = edge_values.egv_edg_id
+        JOIN aadt.edges on edg_id_target = edg_id
 )
-INSERT INTO edge_values_cal(
+INSERT INTO aadt.edge_values_cal(
         evc_edg_id_target,
         evc_target_start,
         evc_target_end,
+        evc_target_weight,
         evc_target_aadt,
         evc_edg_id_source,
         evc_edg_id_source_start,
@@ -61,13 +62,14 @@ INSERT INTO edge_values_cal(
 select edg_id_target,
     target_start,
     target_end,
+    target_weight,
     target_aadt,
     edg_id_source,
     edges.edg_nod_id_start,
     edges.edg_nod_id_end,
     source_aadt
 from init_target
-    JOIN edges on edg_id_source = edges.edg_id;
+    JOIN aadt.edges on edg_id_source = edges.edg_id;
 RETURN processed_nodes;
 END;
 $$ LANGUAGE plpgsql;
