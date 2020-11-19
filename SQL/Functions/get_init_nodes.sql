@@ -1,4 +1,17 @@
-CREATE OR REPLACE FUNCTION get_init_nodes() RETURNS INT AS $$
+/*****************************************************************************
+ NAME:        get_init_nodes
+ DESCRIPTION: 	get init nodes and edges from one end of the source edge
+				
+ TEST PROC:		
+ CREATED BY:		Jingchao Zhou
+ CREATED AT:		11/19/2020
+ HISTORY:			
+	11/19/2020:	jz Initial code
+	
+ NOTES:
+******************************************************************************/
+
+CREATE OR REPLACE FUNCTION aadt.get_init_nodes() RETURNS INT AS $$
 DECLARE processed_nodes record;
 BEGIN WITH two_ends AS --find the two ends of the known(red) edges
 (
@@ -40,13 +53,13 @@ init_target AS(
         target_start.edg_nod_id_start AS target_start,
         target_start.edg_nod_id_end AS target_end,
         --query next_node column here
-        case
-            when target_start.edg_nod_id_start = target_start.source_start_id then target_start.edg_nod_id_end
-            when target_start.edg_nod_id_end = target_start.source_start_id then target_start.edg_nod_id_start
-        end AS next_node
+        CASE
+            WHEN target_start.edg_nod_id_start = target_start.source_start_id THEN target_start.edg_nod_id_end
+            WHEN target_start.edg_nod_id_end = target_start.source_start_id THEN target_start.edg_nod_id_start
+        END AS next_node
     FROM target_start
         JOIN aadt.edge_values ON target_start.edg_id_source = edge_values.egv_edg_id
-        JOIN aadt.edges on edg_id_target = edg_id
+        JOIN aadt.edges ON edg_id_target = edg_id
 )
 INSERT INTO aadt.edge_values_cal(
         evc_edg_id_target,
@@ -59,7 +72,7 @@ INSERT INTO aadt.edge_values_cal(
         evc_edg_id_source_end,
         evc_source_aadt
     )
-select edg_id_target,
+SELECT edg_id_target,
     target_start,
     target_end,
     target_weight,
@@ -68,8 +81,9 @@ select edg_id_target,
     edges.edg_nod_id_start,
     edges.edg_nod_id_end,
     source_aadt
-from init_target
-    JOIN aadt.edges on edg_id_source = edges.edg_id;
+FROM init_target
+    JOIN aadt.edges ON edg_id_source = edges.edg_id;
 RETURN processed_nodes;
 END;
 $$ LANGUAGE plpgsql;
+

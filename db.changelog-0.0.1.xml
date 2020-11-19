@@ -6,8 +6,8 @@
         xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
  
-    <include file="SQL/tables/defineTables-1.1.0-20201007.sql"/>
-
+    <include file="SQL/Schema/defineSchemas-0.0.1-20201118.sql"/>
+    <include file="SQL/Tables/defineTables-0.0.1-20201117.sql"/>
 </databaseChangeLog>
 
 

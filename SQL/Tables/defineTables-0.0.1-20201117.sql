@@ -3,7 +3,6 @@
 --changeset Zhoujc:20201117-1
 --preconditions onFail:CONTINUE onError:HALT
 --Create tables and insert initial values.
-CREATE SCHEMA IF NOT EXISTS aadt;
 DROP TABLE IF EXISTS edge_values;
 DROP TABLE IF EXISTS edge_values_cal;
 DROP TABLE IF EXISTS edges;

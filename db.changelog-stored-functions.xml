@@ -6,14 +6,14 @@
         xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-	<!--<include file="SQL/db.tag-BASELINE.sql"/>-->
-
- 	<include file="db.changelog-0.0.1.xml"/> 
- 	<!--<include file="SQL/db.tag-0.0.1.sql"/> -->
-
-        <include file="db.changelog-stored-functions.xml"/>
-	
-	
+	<changeSet author="zhoujc" id="20201119-function" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="/SQL/Functions/get_init_nodes.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
 
 </databaseChangeLog>
+
 

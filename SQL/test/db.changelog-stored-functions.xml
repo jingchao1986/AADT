@@ -1,0 +1,2564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+	<changeSet author="guob" id="20171017-a3i.add_model2" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.add_model2.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba._lrs_mode.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba._lrs_mode.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="20171017-a3i.add_parsed_addresses" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.add_parsed_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="20171017-a3i.add_parsed_temp" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.add_parsed_temp.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="20171017-a3i.add_raw_addresses" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.add_raw_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-a3i.add_rule" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.add_rule.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-a3i.del_model" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.del_model.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-lba.del_project" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.del_project.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-a3i.del_rule" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.del_rule.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>	
+	<changeSet author="guob" id="20171017-lba.end_session" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.end_session.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>	
+	<changeSet author="guob" id="20171017-a3i.get_parsed_addresses" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_parsed_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-a3i.get_parsed_temp" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_parsed_temp.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+<!-- 	<changeSet author="guob" id="20171017-a3i.get_place_name_types" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_place_name_types.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+ -->	<changeSet author="guob" id="20171017-a3i.get_raw_addresses" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_raw_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-a3i.get_session_detail" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_session_detail.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-public._get_token_positions.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-public._get_token_positions.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+<!-- 	<changeSet author="guob" id="20171017-a3i.get_tokenized_raw_addresses" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_tokenized_raw_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+ -->	<changeSet author="guob" id="20171017-a3i.get_transaction_info" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_transaction_info.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-lba.add_project" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.add_project.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-a3i.json_typeof" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.json_typeof.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-lba.start_session" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.start_session.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-a3i.update_model" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.update_model.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-lba.upd_project" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.upd_project.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-a3i.update_rule" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.update_rule.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-lba._manage_session" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba._manage_session.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-lba.add_user" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.add_user.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-lba.get_lbt_license" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_lbt_license.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-lba.get_license_info" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_license_info.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-lba.get_user" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_user.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-lba.lock_license" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.lock_license.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>	
+	<changeSet author="guob" id="20171017-lba.post_lbt_license_log" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.post_lbt_license_log.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-lba.release_license" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.release_license.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-lba.upd_user" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.upd_user.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-lba.utl_purge_customer" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.utl_purge_customer.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="SQL/functions/createSF-lba.utl_purge_user.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.utl_purge_user.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-lba.get_customers" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_customers.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+<!-- 	<changeSet author="guob" id="20171017-lbo.get_layer_attr_cols" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_layer_attr_cols.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet> -->
+	<changeSet author="guob" id="20171017-lbo.get_layer_cols" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_layer_cols.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="20171017-lbo.get_layer_attributes" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_layer_attributes.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+<!-- 	<changeSet author="guob" id="20171017-lbo.get_layer_lrs_cols" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_layer_lrs_cols.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet> -->
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_arnold_layer.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_arnold_layer.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+<!-- 	<changeSet author="guob" id="20171026-lbo.load_layers2" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.load_layers2.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+ -->	
+	<changeSet author="guob" id="20171017-public._pivotcode" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-public._pivotcode.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+<!-- 	<changeSet author="guob" id="20171026-a3i.get_raw_addresses_count" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_raw_addresses_count.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet> -->
+
+	<changeSet author="guob" id="20171031-createSF-a3i.del_parsed_temp.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.del_parsed_temp.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+<!-- 	<changeSet author="guob" id="20171114-createSF-a3i.tokenize_raw_addresses.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.tokenize_raw_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+ -->
+	<changeSet author="guob" id="20171118-createSF-public._create_table_from_csv.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-public._create_table_from_csv.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="20171118-createSF-lba._convert_gfo.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba._convert_gfo.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="20171118-createSF-public._isnumeric.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-public._isnumeric.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="20171119-createSF-a3i.get_entity_tag_types.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_entity_tag_types.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="20171119-createSF-a3i.get_entities.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_entities.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="20171123-createSF-lba.utl_update_gdo.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.utl_update_gdo.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="20171123-createSF-lba.get_gdo.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_gdo.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+<!-- 	<changeSet author="guob" id="20171123-createSF-a3i.load_entities.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.load_entities.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet> -->
+
+	<changeSet author="guob" id="20171123-a3i.get_raw_addresses_by_entity_tag.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_raw_addresses_by_entity_tag.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_geocode_engines.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_geocode_engines.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i._get_standard_name.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i._get_standard_name.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.add_standard_addresses.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.add_standard_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_std_civic_addresses.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_std_civic_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.add_addr_coords.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.add_addr_coords.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_std_non_civic_addresses.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_std_non_civic_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_std_filter_values.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_std_filter_values.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_transactions.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_transactions.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+
+<!-- 	<changeSet author="guob" id="SQL/functions/createSF-a3i.tokenize_raw_addresses_worker.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.tokenize_raw_addresses_worker.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+ -->
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.add_tag.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.add_tag.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.rpt_entities.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.rpt_entities.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+<!-- 	<changeSet author="guob" id="SQL/functions/createSF-a3i.qc_entities.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.qc_entities.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+ -->
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.utl_unload_entities.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.utl_unload_entities.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.rpt_entities_qc.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.rpt_entities_qc.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.rpt_entities_summary.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.rpt_entities_summary.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.update_parsed_temp.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.update_parsed_temp.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.utl_convert_gto.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.utl_convert_gto.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.add_table.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.add_table.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.upd_table.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.upd_table.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.del_table.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.del_table.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_table.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_table.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_app_info.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_app_info.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.exists_user.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.exists_user.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.add_user_sub.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.add_user_sub.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.add_user.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.add_user.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.invite_user.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.invite_user.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.add_customer.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.add_customer.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_user_sub.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_user_sub.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.del_user_sub.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.del_user_sub.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_sub.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_sub.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.add_sub.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.add_sub.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba._construct_gfo.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba._construct_gfo.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_std_civic_addresses_geocode.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_std_civic_addresses_geocode.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba._get_config_id.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba._get_config_id.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_raw_addresses_parse.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_raw_addresses_parse.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.revise_raw_addresses.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.revise_raw_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<!-- <changeSet author="guob" id="SQL/functions/createSF-a3i.load_entities2.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.load_entities2.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet> -->
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.utl_purge_project.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.utl_purge_project.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.utl_purge_all_projects.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.utl_purge_all_projects.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_route_list.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_route_list.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_layer_list.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_layer_list.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_layer_geometries.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_layer_geometries.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_layer_lrs_attributes.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_layer_lrs_attributes.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+<!-- 	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_route_measure_range.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_route_measure_range.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+ -->
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_route_geometry.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_route_geometry.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.prep_temp_tables.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.prep_temp_tables.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.gen_unit_segments.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.gen_unit_segments.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.utl_purge_layer.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.utl_purge_layer.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.report_prep.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.report_prep.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.gsj_gridify.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.gsj_gridify.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.gsj_results.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.gsj_results.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.gsj_join_manager.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.gsj_join_manager.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.gsj_join_sql2.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.gsj_join_sql2.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.gsj_summarize_sql.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.gsj_summarize_sql.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.gsj.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.gsj.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.report_gen.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.report_gen.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.gsj_report_write.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.gsj_report_write.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+ 	<changeSet author="guob" id="SQL/functions/createSF-lbz.gsd.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.gsd.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+ 	<changeSet author="guob" id="SQL/functions/createSF-lbz.gsd_qrf.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.gsd_qrf.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+ 	<changeSet author="guob" id="SQL/functions/createSF-lbz.gsd_rrf.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.gsd_rrf.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+ 	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_route_references.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_route_references.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.tester_gsj_gsd.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.tester_gsj_gsd.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.get_report_list.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.get_report_list.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.get_report_content.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.get_report_content.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.sections_qc.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.sections_qc.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.utl_insert_test_case.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.utl_insert_test_case.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.del_report.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.del_report.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.tester_gsj_gsd_breakup.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.tester_gsj_gsd_breakup.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.del_user.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.del_user.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_user_list.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_user_list.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_lb_apps.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_lb_apps.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="SQL/functions/createSF-lba.del_user_subs.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.del_user_subs.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="SQL/functions/createSF-lba.transfer_user_subs.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.transfer_user_subs.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="SQL/functions/createSF-lba.del_sub.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.del_sub.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="SQL/functions/createSF-lba._get_std_payload.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba._get_std_payload.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.pre_process.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.pre_process.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+<!-- 	<changeSet author="guob" id="SQL/functions/createSF-a3i.regex_test_preprocess.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.regex_test_preprocess.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+ -->
+	<changeSet author="guob" id="SQL/functions/createSF-a3i._get_clean_address.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i._get_clean_address.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_qc_addresses.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_qc_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.del_parsed_temp_worker.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.del_parsed_temp_worker.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.del_parsed_addresses.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.del_parsed_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.del_qc_addresses.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.del_qc_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-public._prefix_jsonb_key.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-public._prefix_jsonb_key.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.utl_remove_tokens.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.utl_remove_tokens.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.utl_purge_qc_addresses_by_proj.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.utl_purge_qc_addresses_by_proj.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.utl_purge_parsed_addresses_by_proj.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.utl_purge_parsed_addresses_by_proj.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.set_sub_lock_status.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.set_sub_lock_status.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.regex_test_preprocess2.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.regex_test_preprocess2.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.add_socket_message.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.add_socket_message.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_socket_messages.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_socket_messages.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba._get_standard_place_name.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba._get_standard_place_name.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.utl_populate_test_addresses.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.utl_populate_test_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_projects.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_projects.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.utl_purge_parsed_temp.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.utl_purge_parsed_temp.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_layer_type_list.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_layer_type_list.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_standard_schema.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_standard_schema.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i._get_standard_tr.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i._get_standard_tr.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.utl_purge_pending_user.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.utl_purge_pending_user.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<!-- <changeSet author="guob" id="SQL/functions/createSF-azgiv.load_layers.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.load_layers.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet> -->
+
+	<!-- <changeSet author="guob" id="SQL/functions/createSF-azgiv.get_schema_mapping_by_type.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_schema_mapping_by_type.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet> -->
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_layers.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_layers.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-public._get_timestamp_from_json.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-public._get_timestamp_from_json.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.del_socket_messages.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.del_socket_messages.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.utl_purge_layer.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.utl_purge_layer.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.utl_purge_layers.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.utl_purge_layers.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_layer_contents.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_layer_contents.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_schema.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_schema.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.upd_socket_messages.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.upd_socket_messages.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_transactions.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_transactions.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.civic_geocode.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.civic_geocode.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.non_civic_geocode.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.non_civic_geocode.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.del_layer.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.del_layer.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.utl_purge_project_data.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.utl_purge_project_data.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_qc_layers.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_qc_layers.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.qc_layer.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.qc_layer.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_qc_intra_layer_report.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_qc_intra_layer_report.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_qa_rules.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_qa_rules.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.utl_undo_layer_qc.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.utl_undo_layer_qc.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_qc_schema_report.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_qc_schema_report.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_qc_layer_report.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_qc_layer_report.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-public._is_type_compatible.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-public._is_type_compatible.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+<!-- 	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_layer_sections.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_layer_sections.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet> -->
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.load_layers_spatial.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.load_layers_spatial.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.load_layers_sections.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.load_layers_sections.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_layer_geometry.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_layer_geometry.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.upd_user_sub.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.upd_user_sub.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-public._truncate_all_tables.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-public._truncate_all_tables.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.cancel_long_transaction.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.cancel_long_transaction.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<!-- <changeSet author="guob" id="SQL/functions/createSF-lba.utl_purge_temp_tables.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.utl_purge_temp_tables.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet> -->
+
+	<changeSet author="guob" id="SQL/functions/createSF-public._get_json_from_sql.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-public._get_json_from_sql.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-public._cast_numeric.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-public._cast_numeric.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-public._get_rs_def_from_jsonarray.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-public._get_rs_def_from_jsonarray.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba._page_rows_of_record.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba._page_rows_of_record.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba._page_rows_of_json.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba._page_rows_of_json.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.load_entities3.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.load_entities3.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.load_layers2.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.load_layers2.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_sub_plans.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_sub_plans.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.upd_sub.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.upd_sub.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_lrs.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_lrs.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.add_lrs.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.add_lrs.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_symbology.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_symbology.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.add_symbology.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.add_symbology.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.upd_default_value_usr.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.upd_default_value_usr.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.upd_symbology.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.upd_symbology.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.del_symbology.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.del_symbology.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_adhs_master.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_adhs_master.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<!-- <changeSet author="guob" id="SQL/functions/createSF-lba.upd_map_spec.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.upd_map_spec.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet> -->
+
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.upd_lrs.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.upd_lrs.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<!-- <changeSet author="guob" id="SQL/functions/createSF-lbo.get_sym_col_vals.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_sym_col_vals.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet> -->
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_domains.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_domains.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.is_topology_built.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.is_topology_built.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.build_topology.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.build_topology.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_layer_geom_bbox.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_layer_geom_bbox.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.utl_undo_layer_qcs.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.utl_undo_layer_qcs.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo._get_prj_id_lrs.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo._get_prj_id_lrs.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.utl_purge_topology.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.utl_purge_topology.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_metadata2.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_metadata2.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_event_layer_meta.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_event_layer_meta.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_parsing_service_result.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_parsing_service_result.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_model.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_model.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_rule.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_rule.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_ws_parse_result.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_ws_parse_result.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.upd_customer.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.upd_customer.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.load_layers_event.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.load_layers_event.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.load_mag.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.load_mag.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.utl_purge_lrs.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.utl_purge_lrs.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_mag.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_mag.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_symbology_vals.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_symbology_vals.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-public._create_table_from_sql.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-public._create_table_from_sql.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.utl_drop_report_tables.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.utl_drop_report_tables.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.del_gs_process.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.del_gs_process.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz._get_hpms_rule_stmts.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz._get_hpms_rule_stmts.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_symbology_domain.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_symbology_domain.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.sections_qc2.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.sections_qc2.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.get_hpms_rules.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.get_hpms_rules.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.utl_purge_layers.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.utl_purge_layers.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.build_arnold_references.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.build_arnold_references.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+	<changeSet author="guob" id="SQL/functions/createSF-lbz._build_gsj_layers.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz._build_gsj_layers.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.prep_temp_table_route_list.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.prep_temp_table_route_list.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_layer_attributes_lbe.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_layer_attributes_lbe.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_symbology_compatible.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_symbology_compatible.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.gsj_report.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.gsj_report.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_route_geometry_by_bbox.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_route_geometry_by_bbox.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.gsj_join_manager3.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.gsj_join_manager3.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.gsj_join_sql3.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.gsj_join_sql3.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<!-- <changeSet author="guob" id="SQL/functions/createSF-lbo.get_route_geometry_by_ll.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_route_geometry_by_ll.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet> -->
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo._get_exclusion.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo._get_exclusion.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-public._isdate.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-public._isdate.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-public._check_json_item_type.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-public._check_json_item_type.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_layer_attributes_row_count.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_layer_attributes_row_count.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.utl_purge_projects.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.utl_purge_projects.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_geocode_sources.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_geocode_sources.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.del_geocode_source.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.del_geocode_source.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.add_geocode_source.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.add_geocode_source.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.upd_geocode_source.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.upd_geocode_source.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_nag_category.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_nag_category.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_nag_names_alias.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_nag_names_alias.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_nag_names_std.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_nag_names_std.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.del_nag_names_alias.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.del_nag_names_alias.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.del_nag_names_std.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.del_nag_names_std.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.add_nag_names_alias.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.add_nag_names_alias.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.add_nag_names_std.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.add_nag_names_std.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.upd_nag_names_alias.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.upd_nag_names_alias.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.upd_nag_names_std.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.upd_nag_names_std.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_nag_subcategory.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_nag_subcategory.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.utl_purge_geocode_by_proj.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.utl_purge_geocode_by_proj.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.rpt_adhs_geocode_summary.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.rpt_adhs_geocode_summary.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.rpt_geocode_list.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.rpt_geocode_list.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.add_mag_addresses.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.add_mag_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_unmagnized_tags.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_unmagnized_tags.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.upd_report.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.upd_report.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_project_mobile.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_project_mobile.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.get_event_loads_log.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.get_event_loads_log.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.del_customer.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.del_customer.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.rpt_mag_qc.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.rpt_mag_qc.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-a3i.upd_mag_addresses.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-a3i.upd_mag_addresses.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_feature_toggle.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_feature_toggle.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.add_device_log.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.add_device_log.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_lbm_license.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_lbm_license.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_lbm_license.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_lbm_license.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.upd_feature_toggle.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.upd_feature_toggle.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.upd_lbm_state.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.upd_lbm_state.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_project_states.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_project_states.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.upd_lbm_license_count.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.upd_lbm_license_count.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_lbm_license_count.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_lbm_license_count.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_route_id_by_ll.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_route_id_by_ll.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_hpms_codes.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_hpms_codes.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_child_agencies.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_child_agencies.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_qc_err_count.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_qc_err_count.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.submit_layer.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.submit_layer.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.is_submittable.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.is_submittable.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.utl_switch_hpms_val_cols.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.utl_switch_hpms_val_cols.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_schema_mapping_col.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_schema_mapping_col.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.del_layer.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.del_layer.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/triggers/createTG-lba.lb_customers.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/triggers/createTG-lba.lb_customers.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/triggers/createTG-lba.lb_projects.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/triggers/createTG-lba.lb_projects.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/triggers/createTG-lba.lb_subscriptions.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/triggers/createTG-lba.lb_subscriptions.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/triggers/createTG-lba.lb_users.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/triggers/createTG-lba.lb_users.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo._get_fs_ft_by_level.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo._get_fs_ft_by_level.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.upd_layer.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.upd_layer.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv._get_layer_cols.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv._get_layer_cols.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_layer_download_sql.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_layer_download_sql.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_child_layers.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_child_layers.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.build_arnold_segments.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.build_arnold_segments.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_integrators.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_integrators.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.add_integrator_client.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.add_integrator_client.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_integrator_clients.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_integrator_clients.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.del_integrator_client.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.del_integrator_client.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.utl_add_user.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.utl_add_user.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.utl_assign_parent.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.utl_assign_parent.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_nguid_key_status.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_nguid_key_status.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.utl_change_user_pass.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.utl_change_user_pass.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.utl_change_user_name.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.utl_change_user_name.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_schema_mapping_layer.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_schema_mapping_layer.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_user_list_gistic.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_user_list_gistic.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_us_states.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_us_states.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.upd_cus_config.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.upd_cus_config.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.add_cus_config.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.add_cus_config.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_layer_id.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_layer_id.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.build_fac_type_thru_lanes.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.build_fac_type_thru_lanes.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbo.get_fac_type_thru_lanes.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbo.get_fac_type_thru_lanes.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lbz.is_fac_type_thru_lanes_built.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lbz.is_fac_type_thru_lanes_built.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.get_auth_type.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.get_auth_type.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-lba.lb_auth_user.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-lba.lb_auth_user.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.fishbone_analysis.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.fishbone_analysis.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_fishbone_state.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_fishbone_state.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_qc_inter_layer_report.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_qc_inter_layer_report.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_qc_inter_layer_report_by_map.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_qc_inter_layer_report_by_map.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+	<changeSet author="guob" id="SQL/functions/createSF-azgiv.get_qc_inter_layer_report_by_attr.sql" runOnChange="true" runInTransaction="true">
+	    <sqlFile path="SQL/functions/createSF-azgiv.get_qc_inter_layer_report_by_attr.sql"
+	             encoding="UTF-8"
+	             relativeToChangelogFile="true"
+	             endDelimiter=";"
+	             splitStatements="false"/>
+	</changeSet>
+
+</databaseChangeLog>
+
+
