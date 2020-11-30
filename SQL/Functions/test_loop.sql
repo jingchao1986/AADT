@@ -1,5 +1,5 @@
 -- get next start nodes of the target edges.
-CREATE OR REPLACE FUNCTION aadt.while_loop() RETURNS text AS $$
+CREATE OR REPLACE FUNCTION aadt.test_loop() RETURNS text AS $$
 DECLARE row_cnt INT; 
         l_loop_cnt INT;
         
@@ -79,79 +79,11 @@ target_start AS(
     JOIN aadt.edges on init_nodes.evc_edg_id_target = edges.edg_id
     WHERE aadt.edge_values.egv_id=1;
 
-    WHILE row_cnt > 0 AND l_loop_cnt < 2
-    LOOP
 
-		WITH next_nodes as (
-			select * from 
-		(SELECT 
-            aadt.edge_values_cal.evc_target_end AS next_start,
-            CASE
-            WHEN evc_target_end = aadt.edges.edg_nod_id_start 
-            THEN aadt.edges.edg_nod_id_end
-            WHEN evc_target_end = aadt.edges.edg_nod_id_end
-            THEN aadt.edges.edg_nod_id_start 
-            END AS next_end
-			FROM aadt.edge_values_cal JOIN aadt.edges
-			 ON 
-			 aadt.edge_values_cal.evc_target_end = aadt.edges.edg_nod_id_start 
-			OR aadt.edge_values_cal.evc_target_end = aadt.edges.edg_nod_id_end) a
-			where next_end not in 
-			(select aadt.edge_values_cal.evc_target_start from aadt.edge_values_cal)
-			),
-			
-			next_edges AS (
-			SELECT next_id,next_start, next_end FROM
-				(SELECT 
-					CASE 
-					WHEN aadt.edges.edg_nod_id_start = next_nodes.next_start 
-					AND aadt.edges.edg_nod_id_end = next_nodes.next_end 
-					THEN aadt.edges.edg_id
-					WHEN aadt.edges.edg_nod_id_end = next_nodes.next_start 
-					AND aadt.edges.edg_nod_id_start = next_nodes.next_end 
-					THEN aadt.edges.edg_id	END AS next_id,		
-					next_start,
-					next_end from next_nodes, aadt.edges) a
-					WHERE next_id is not null)
-			
-		
-        INSERT INTO aadt.edge_values_cal
-            (evc_edg_id_target,
-            evc_target_start,
-            evc_target_end,
-            evc_target_weight,
-            evc_target_aadt,
-            evc_edg_id_source,
-            evc_edg_id_source_start,
-            evc_edg_id_source_end,
-            evc_source_aadt)
-                
-        SELECT 
-            next_id,		
-            next_start,
-            next_end,
-            aadt.edges.edg_egt_weight,
-            aadt.edge_values_cal.evc_target_aadt * aadt.edges.edg_egt_weight /(
-                SUM(aadt.edges.edg_egt_weight) OVER (PARTITION BY aadt.edge_values_cal.evc_edg_id_target)
-            ),
-            evc_edg_id_target,
-            evc_target_start,
-            evc_target_end,
-            evc_target_aadt
+
+ 
+
     
-        FROM next_edges
-		JOIN aadt.edges ON next_edges.next_id = aadt.edges.edg_id
-		JOIN aadt.edge_values_cal ON next_start = aadt.edge_values_cal.evc_target_end;
-		
-    
-
-        GET DIAGNOSTICS row_cnt = ROW_COUNT;
-        UPDATE aadt.edge_values_cal
-        SET evc_flag = true;
-
-        l_loop_cnt := l_loop_cnt + 1;
-
-    END LOOP;
 RETURN 
 format ('%s rows affected', row_cnt);
 END;

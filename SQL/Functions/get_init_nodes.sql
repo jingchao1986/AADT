@@ -13,7 +13,9 @@
 
 CREATE OR REPLACE FUNCTION aadt.get_init_nodes() RETURNS INT AS $$
 DECLARE processed_nodes record;
-BEGIN WITH two_ends AS --find the two ends of the known(red) edges
+BEGIN 
+
+WITH two_ends AS --find the two ends of the known(red) edges
 (
     SELECT edg_id,
         edg_nod_id_start,
@@ -61,7 +63,7 @@ init_target AS(
         JOIN aadt.edge_values ON target_start.edg_id_source = edge_values.egv_edg_id
         JOIN aadt.edges ON edg_id_target = edg_id
 )
-INSERT INTO aadt.edge_values_cal(
+INSERT INTO aadt.init_nodes(
         evc_edg_id_target,
         evc_target_start,
         evc_target_end,

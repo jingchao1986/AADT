@@ -3,11 +3,11 @@
 --changeset Zhoujc:20201117-1
 --preconditions onFail:CONTINUE onError:HALT
 --Create tables and insert initial values.
-DROP TABLE IF EXISTS edge_values;
-DROP TABLE IF EXISTS edge_values_cal;
-DROP TABLE IF EXISTS edges;
-DROP TABLE IF EXISTS edge_types;
-DROP TABLE IF EXISTS nodes;
+DROP TABLE IF EXISTS aadt.edge_values;
+DROP TABLE IF EXISTS aadt.edge_values_cal;
+DROP TABLE IF EXISTS aadt.edges;
+DROP TABLE IF EXISTS aadt.edge_types;
+DROP TABLE IF EXISTS aadt.nodes;
 CREATE TABLE aadt.nodes (
     nod_id SERIAL NOT NULL PRIMARY KEY,
     nod_name varchar(50)
@@ -34,6 +34,22 @@ CREATE TABLE aadt.edge_values (
     FOREIGN KEY (egv_edg_id) REFERENCES aadt.edges (edg_id)
 );
 CREATE TABLE aadt.edge_values_cal(
+    evc_id serial not null primary key,
+    evc_edg_id_target INT,
+    evc_target_start INT,
+    evc_target_end INT,
+    evc_target_weight INT,
+    evc_target_aadt INT,
+    evc_edg_id_source INT,
+    evc_edg_id_source_start INT,
+    evc_edg_id_source_end INT,
+    evc_source_aadt INT,
+    evc_flag BOOLEAN,
+    FOREIGN KEY (evc_edg_id_target) REFERENCES aadt.edges (edg_id),
+    FOREIGN KEY (evc_edg_id_source) REFERENCES aadt.edges (edg_id)
+);
+
+CREATE TABLE aadt.init_nodes(
     evc_id serial not null primary key,
     evc_edg_id_target INT,
     evc_target_start INT,
